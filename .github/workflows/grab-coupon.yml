@@ -15,6 +15,10 @@ on:
     #         │ │ │ │ ┌── day of the week (0 - 6 or SUN-SAT)
     #         │ │ │ │ │
     - cron: '45 2 * * *'
+  # api调用
+  repository_dispatch:
+    types:
+      - api_call
 
 jobs:
   start:
